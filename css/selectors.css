@@ -1,4 +1,9 @@
-/* Basic and Relational Selectors */
+/* 
+
+Basic and Relational Selectors 
+Source: https://www.w3schools.com/cssref/css_selectors.asp
+
+*/
 
 /* 
 
@@ -80,5 +85,56 @@ attribute selector
 */
 
 a[href^="https"] {
+  color: green;
+}
+
+/* 
+
+Pseudo-class Selectors 
+Source: https://www.w3schools.com/css/css_pseudo_classes.asp
+
+*/
+
+/* Anchor Pseudo-classes */
+
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover,
+a:focus {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+/*
+
+:first-child Pseudo-class
+
+The :first-child pseudo-class matches a specified element that is the first child of another element.
+
+*/
+
+section > article > p:first-child {
+  font-size: 125%;
+  font-weight: bold;
+}
+
+ul > li:nth-child(odd) {
+  color: red;
+}
+
+ul > li:nth-child(2n) {
   color: green;
 }
