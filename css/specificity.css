@@ -1,0 +1,71 @@
+/* 
+
+What is Specificity?
+
+If there are two or more conflicting CSS rules that point to the same 
+element, the browser follows some rules to determine which one is most 
+specific and therefore wins out.
+
+Think of specificity as a score/rank that determines which style 
+declarations are ultimately applied to an element.
+
+The universal selector (*) has low specificity, while ID selectors 
+are highly specific! 
+
+Source: https://www.w3schools.com/css/css_specificity.asp
+
+*/
+
+/*
+
+How is specificity calculated?
+
+Specificity is a weight that is applied to a given CSS declaration, 
+determined by the number of each selector type in the matching selector.
+
+When multiple declarations have equal specificity, 
+the last declaration found in the CSS is applied to the element.
+
+Selectors Specificity Score (0,0,0)
+
+1. Number of ID selectors.
+2. Number of class selectors.
+3. Number of element selctors.
+
+*/
+
+/*
+
+The !important exception
+
+When an important rule is used on a style declaration, 
+this declaration overrides any other declarations. 
+
+Although technically !important has nothing to do with specificity, 
+it interacts directly with it. 
+
+Using !important, however, is bad practice and should be avoided 
+because it makes debugging more difficult by breaking the natural 
+cascading in your stylesheets.
+
+*/
+
+/* Score (1,0,0) */
+#heading {
+  color: green;
+}
+
+/* Score (0,1,0) */
+.highlight {
+  color: deeppink;
+}
+
+/* Score (0,0,1) */
+h1 {
+  color: dodgerblue;
+}
+
+/* Score (1, 1, 0) */
+.featured #heading {
+  color: goldenrod;
+}
