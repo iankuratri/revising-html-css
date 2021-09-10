@@ -1,0 +1,52 @@
+/* 
+
+Inheritance
+
+In CSS, inheritance controls what happens when no value is 
+specified for a property on an element.
+
+CSS properties can be categorized in two types:
+
+1. inherited properties, which by default are set to the computed 
+value of the parent element 
+
+2. non-inherited properties, which by default are set to initial 
+value of the property
+
+*/
+
+#inheritance h2 {
+  /* inherited property */
+  color: dodgerblue;
+
+  /* non-inherited property */
+  border: 1px solid black;
+}
+
+#inheritance h2 strong {
+  /* remove inheritance */
+  color: initial;
+
+  /* force inheritance */
+  border: inherit;
+}
+
+/*
+
+Notes
+
+The inherit keyword allows authors to explicitly specify inheritance. 
+It works on both inherited and non-inherited properties.
+
+You can control inheritance for all properties at once using the 
+all shorthand property, which applies its value to all properties. 
+
+For example:
+
+p {
+  all: revert;
+  font-size: 200%;
+  font-weight: bold;
+}
+
+*/
