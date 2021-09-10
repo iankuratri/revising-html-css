@@ -1,0 +1,14 @@
+#shadows .box {
+  height: 200px;
+  width: 200px;
+  background-color: dodgerblue;
+  box-shadow: 0 0 50px grey;
+}
+
+#shadows .box > h3 {
+  font-size: 40px;
+  color: white;
+  margin: 7px;
+
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
