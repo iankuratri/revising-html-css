@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sizing Elements</title>
+
+    <link rel="stylesheet" href="styles/box-sizing.css" />
+  </head>
+  <body>
+    <!-- content-box -->
+    <div class="box box-one">
+      <h1>Content Box</h1>
+      <p>It gives you the default CSS box-sizing behavior.</p>
+      <p>
+        If you set an element's width to 300 pixels, then the element's content
+        box will be 300 pixels wide, and the width of any border or padding will
+        be added to the final rendered width, making the element wider than
+        300px.
+      </p>
+    </div>
+
+    <!-- border-box -->
+    <div class="box box-two">
+      <h1>Border Box</h1>
+      <p>
+        It tells the browser to account for any border and padding in the values
+        you specify for an element's width and height.
+      </p>
+      <p>
+        If you set an element's width to 300 pixels, that 300 pixels will
+        include any border or padding you have added.
+      </p>
+    </div>
+  </body>
+</html>
