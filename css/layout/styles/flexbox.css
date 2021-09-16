@@ -1,0 +1,80 @@
+/* 
+
+Flexbox
+
+Used for laying out elements in one direction.
+
+Source: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+*/
+
+/* 
+
+Properties for the Parent (flex container)
+
+*/
+
+/* 
+
+Property for direction
+
+flex-direction (establishes the main-axis)
+value can be: 
+row | row-reverse | column | column-reverse
+
+*/
+
+/* 
+
+Properties for aligning items
+
+justify-content (along the main axis)
+value can be: 
+flex-start | flex-end | center | space-between | space-around | space-evenly
+
+align-items (along the cross axis)
+value can be:
+flex-start | flex-end | center | stretch | baseline 
+
+align-container (along both axis)
+value can be:
+flex-start | flex-end | center | space-between | space-around | space-evenly | stretch
+
+*/
+
+/* 
+
+Properties for gap between items
+
+gap, row-gap, column-gap
+
+gap: 10px;
+gap: 10px 20px; // row-gap column gap
+row-gap: 10px;
+column-gap: 20px;
+
+*/
+
+.container {
+  border: 0.2rem solid grey;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.item {
+  width: 5rem;
+  height: 5rem;
+
+  margin: 1rem;
+
+  background-color: gold;
+  border: 0.5rem solid orange;
+}
+
+/* 
+
+Properties for the Children (flex items)
+
+*/
