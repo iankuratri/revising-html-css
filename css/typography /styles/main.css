@@ -120,11 +120,26 @@ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
 
 /* 
 
+Horizontal spacing
+
+letter-spacing
+word-spacing
+width
+
+*/
+
+/* 
+
 Ideal line length 
 
 Should be between 50-70 characters for good readability
 
 */
-p {
+
+.p2 {
   width: 60ch;
+}
+
+.p3 {
+  letter-spacing: 2px;
 }
