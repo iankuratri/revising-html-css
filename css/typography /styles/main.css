@@ -143,3 +143,48 @@ Should be between 50-70 characters for good readability
 .p3 {
   letter-spacing: 2px;
 }
+
+/* 
+
+Formatting text
+
+text-align
+text-indent
+text-decoration
+text-transform
+white-space
+column-*
+direction
+
+*/
+
+.p1 {
+  text-align: justify;
+}
+
+.p2 {
+  text-indent: 2rem;
+}
+
+.p3 {
+  text-decoration: line-through;
+}
+
+.p4 {
+  border: 3px solid gold;
+  /* To truncate text these 4 properties are needed */
+  width: 999px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.p5 {
+  column-count: 3;
+  column-gap: 5rem;
+  column-rule: 3px dashed dodgerblue;
+}
+
+.p6 {
+  direction: rtl;
+}
