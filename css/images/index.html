@@ -40,12 +40,12 @@
 
     <!-- Resolution Switching -->
     <!-- 
-        
+
         Responsive Image Breakpoints Generator
         https://www.responsivebreakpoints.com/
 
      -->
-    <img
+    <!-- <img
       src="media/salad@1x.jpg"
       alt="A bowl of salad"
       srcset="
@@ -58,6 +58,20 @@
       (max-width: 700px) 50vw,
       33vw
       "
-    />
+    /> -->
+
+    <!-- Using Modern Image Formats -->
+    <!-- 
+        JPG to WEBP Converter
+        https://cloudconvert.com/jpg-to-webp
+     -->
+
+    <picture>
+      <source type="image/webp" srcset="media/salad@3x.webp" />
+      <!-- Fallback to JPG if WEBP is not supported -->
+      <source type="image/jpg" srcset="media/salad@3x.jpg" />
+      <!-- For browsers that don't support picture element -->
+      <img src="media/salad@3x.jpg" alt="A bowl of salad" />
+    </picture>
   </body>
 </html>
