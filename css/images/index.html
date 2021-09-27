@@ -66,12 +66,21 @@
         https://cloudconvert.com/jpg-to-webp
      -->
 
-    <picture>
+    <!-- <picture>
       <source type="image/webp" srcset="media/salad@3x.webp" />
-      <!-- Fallback to JPG if WEBP is not supported -->
+      Fallback to JPG if WEBP is not supported
       <source type="image/jpg" srcset="media/salad@3x.jpg" />
-      <!-- For browsers that don't support picture element -->
+      For browsers that don't support picture element
       <img src="media/salad@3x.jpg" alt="A bowl of salad" />
+    </picture> -->
+
+    <!-- Art Direction -->
+    <picture>
+      <source media="(max-width: 500px)" srcset="media/salad@3x.jpg" />
+      <!-- For screens bigger than 501px show cropped image -->
+      <source media="(min-width: 501px)" srcset="media/salad-cropped@3x.jpg" />
+      <!-- For browsers that don't support picture element -->
+      <img class="salad-small" src="media/salad@3x.jpg" alt="A bowl of salad" />
     </picture>
   </body>
 </html>
