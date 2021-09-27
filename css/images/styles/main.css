@@ -1,0 +1,22 @@
+h1 {
+  color: gold;
+  font-size: 4rem;
+}
+
+/* Content Images */
+.salad {
+  width: 1000px;
+}
+
+/* Background Images */
+body {
+  background: url("../media/pencil-bg.jpg");
+  background-repeat: no-repeat;
+  /* 
+  background-position: 50px 50px;
+  background-size: 500px 500px; 
+  */
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300vh;
+}
