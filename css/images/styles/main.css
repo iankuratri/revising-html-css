@@ -8,15 +8,53 @@ h1 {
   width: 1000px;
 }
 
+.salad-small {
+  width: 500px;
+}
+
 /* Background Images */
+/* 
 body {
   background: url("../media/pencil-bg.jpg");
   background-repeat: no-repeat;
-  /* 
-  background-position: 50px 50px;
-  background-size: 500px 500px; 
-  */
   background-size: cover;
   background-attachment: fixed;
   height: 300vh;
+} 
+*/
+
+/* 
+body {
+  background-position: 50px 50px;
+  background-size: 500px 500px; 
+}
+*/
+
+/*
+Clipping Images
+https://bennettfeely.com/clippy/
+*/
+
+.clip-into-star {
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+/* 
+Filters
+https://developer.mozilla.org/en-US/docs/Web/CSS/filter
+*/
+
+.grayscale {
+  filter: grayscale(80%);
 }

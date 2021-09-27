@@ -11,6 +11,53 @@
   <body>
     <h1>Images</h1>
     <!-- Content Images -->
-    <!-- <img class="salad" src="media/salad.jpg" alt="A bowl of salad" /> -->
+
+    <!-- Clipping -->
+    <!-- <img
+      class="salad clip-into-star"
+      src="media/salad@3x.jpg"
+      alt="A bowl of salad"
+    /> -->
+
+    <!-- Filters -->
+    <!-- <img
+      class="salad grayscale"
+      src="media/salad@3x.jpg"
+      alt="A bowl of salad"
+    /> -->
+
+    <!-- Supporting High-density Screens -->
+    <!-- <img
+      class="salad-small"
+      src="media/salad@1x.jpg"
+      alt="A bowl of salad"
+      srcset="
+        media/salad@1x.jpg 1x,
+        media/salad@2x.jpg 2x,
+        media/salad@3x.jpg 3x
+      "
+    /> -->
+
+    <!-- Resolution Switching -->
+    <!-- 
+        
+        Responsive Image Breakpoints Generator
+        https://www.responsivebreakpoints.com/
+
+     -->
+    <img
+      src="media/salad@1x.jpg"
+      alt="A bowl of salad"
+      srcset="
+        media/salad@1x.jpg  400w,
+        media/salad@2x.jpg  800w,
+        media/salad@3x.jpg 1200w
+      "
+      sizes="
+      (max-width: 500px) 100vw,
+      (max-width: 700px) 50vw,
+      33vw
+      "
+    />
   </body>
 </html>
