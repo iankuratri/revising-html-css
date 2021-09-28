@@ -7,6 +7,8 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+  margin-bottom: 5rem;
 }
 
 .box {
@@ -16,6 +18,7 @@ section {
   padding: 2rem;
 }
 
+/* 2D Transformation */
 .box-one:hover {
   transform: rotate(45deg);
 }
@@ -30,4 +33,14 @@ section {
 
 .box-four:hover {
   transform: skew(-15deg);
+}
+
+/* 3D Transformation */
+.box-five:hover {
+  transform: perspective(200px) rotateY(45deg);
+  transform-origin: 0 50%;
+}
+
+.box-six:hover {
+  transform: perspective(200px) rotateY(-45deg);
 }
