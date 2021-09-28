@@ -2,11 +2,22 @@ body {
   box-sizing: border-box;
   margin: 0;
   height: 100vh;
+}
+
+section {
+  height: 100%;
 
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+.box {
+  height: 180px;
+  width: 180px;
+  background-color: gold;
+  padding: 2rem;
 }
 
 @keyframes pop {
@@ -28,12 +39,7 @@ body {
   }
 }
 
-.box {
-  height: 180px;
-  width: 180px;
-  background-color: gold;
-  padding: 2rem;
-
+.animation-pop {
   /* 
   Short-hand property
   animation: name duration timing-function delay iteration-count direction fill-mode;
