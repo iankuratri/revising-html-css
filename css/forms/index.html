@@ -37,6 +37,12 @@
       </div>
 
       <div>
+        <label for="age">Age</label>
+        <input type="range" name="age" id="age" min="1" max="100" value="18" />
+        <span id="ageValue"></span>
+      </div>
+
+      <div>
         <label>Gender</label>
         <div>
           <input type="radio" name="gender" id="male" />
@@ -94,5 +100,19 @@
         <button type="reset">Clear</button>
       </div>
     </form>
+
+    <script>
+      const rangeEl = document.querySelector("input[type='range']");
+      const ageValue = document.querySelector("#ageValue");
+
+      function showVaue() {
+        const { value } = rangeEl;
+        ageValue.textContent = value;
+      }
+
+      showVaue();
+
+      rangeEl.addEventListener("input", showVaue);
+    </script>
   </body>
 </html>
