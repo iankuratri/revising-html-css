@@ -50,3 +50,12 @@ textarea {
 .button-container {
   margin-top: 2rem;
 }
+
+fieldset > legend {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+fieldset > div {
+  margin-left: 2rem;
+}

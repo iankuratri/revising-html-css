@@ -16,82 +16,97 @@
   </head>
   <body>
     <form>
-      <div>
-        <label for="name">Name</label>
-        <input id="name" type="text" />
-      </div>
+      <fieldset>
+        <legend>Personal Information</legend>
 
-      <div>
-        <label for="email">Email</label>
-        <input id="email" type="email" />
-      </div>
-
-      <div>
-        <label for="phone">Phone</label>
-        <input id="phone" type="number" />
-      </div>
-
-      <div>
-        <label for="birthday">Date of Birth</label>
-        <input id="birthday" type="date" />
-      </div>
-
-      <div>
-        <label for="age">Age</label>
-        <input type="range" name="age" id="age" min="1" max="100" value="18" />
-        <span id="ageValue"></span>
-      </div>
-
-      <div>
-        <label>Gender</label>
         <div>
-          <input type="radio" name="gender" id="male" />
-          <label class="label-inline" for="male">Male</label>
-
-          <input type="radio" name="gender" id="female" />
-          <label class="label-inline" for="female">Female</label>
-
-          <input type="radio" name="gender" id="other" />
-          <label class="label-inline" for="other">Other</label>
+          <label for="name">Name</label>
+          <input id="name" type="text" />
         </div>
-      </div>
 
-      <div>
-        <label for="occupation">Occupation</label>
-        <input id="occupation" type="text" list="jobs" autocomplete="off" />
-        <datalist id="jobs">
-          <option value="Engineer">Engineer</option>
-          <option value="Doctor">Doctor</option>
-          <option value="Teacher">Teacher</option>
-        </datalist>
-      </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" />
+        </div>
 
-      <div>
-        <label for="course">Course</label>
-        <select name="course" id="course">
-          <option value="">Select a course...</option>
-          <optgroup label="Front-end Courses">
-            <option value="1">HTML</option>
-            <option value="2">CSS</option>
-            <option value="3">JavaScript</option>
-          </optgroup>
-          <optgroup label="Back-end Courses">
-            <option value="4">Node.js</option>
-            <option value="5">ASP.net</option>
-            <option value="6">Django</option>
-          </optgroup>
-        </select>
-      </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input id="phone" type="number" />
+        </div>
 
-      <div>
-        <label for="address">Address</label>
-        <textarea id="address"></textarea>
-      </div>
+        <div>
+          <label for="birthday">Date of Birth</label>
+          <input id="birthday" type="date" />
+        </div>
 
-      <div>
-        <label for="photo">Photo</label>
-        <input type="file" name="photo" id="photo" accept="image/*" />
-      </div>
+        <div>
+          <label for="age">Age</label>
+          <input
+            type="range"
+            name="age"
+            id="age"
+            min="1"
+            max="100"
+            value="18"
+          />
+          <span id="ageValue"></span>
+        </div>
+
+        <div>
+          <label>Gender</label>
+          <div>
+            <input type="radio" name="gender" id="male" />
+            <label class="label-inline" for="male">Male</label>
+
+            <input type="radio" name="gender" id="female" />
+            <label class="label-inline" for="female">Female</label>
+
+            <input type="radio" name="gender" id="other" />
+            <label class="label-inline" for="other">Other</label>
+          </div>
+        </div>
+
+        <div>
+          <label for="address">Address</label>
+          <textarea id="address"></textarea>
+        </div>
+
+        <div>
+          <label for="photo">Photo</label>
+          <input type="file" name="photo" id="photo" accept="image/*" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Professional Information</legend>
+
+        <div>
+          <label for="occupation">Occupation</label>
+          <input id="occupation" type="text" list="jobs" autocomplete="off" />
+          <datalist id="jobs">
+            <option value="Engineer">Engineer</option>
+            <option value="Doctor">Doctor</option>
+            <option value="Teacher">Teacher</option>
+          </datalist>
+        </div>
+
+        <div>
+          <label for="course">Course</label>
+          <select name="course" id="course">
+            <option value="">Select a course...</option>
+            <optgroup label="Front-end Courses">
+              <option value="1">HTML</option>
+              <option value="2">CSS</option>
+              <option value="3">JavaScript</option>
+            </optgroup>
+            <optgroup label="Back-end Courses">
+              <option value="4">Node.js</option>
+              <option value="5">ASP.net</option>
+              <option value="6">Django</option>
+            </optgroup>
+          </select>
+        </div>
+      </fieldset>
 
       <div>
         <input type="checkbox" name="terms" id="terms" />
