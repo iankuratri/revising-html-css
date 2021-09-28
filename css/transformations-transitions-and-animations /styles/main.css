@@ -16,6 +16,13 @@ section {
   width: 180px;
   background-color: gold;
   padding: 2rem;
+ 
+  /* Transition */
+  /* 
+    Cubic Bezier - Custom curve for transition
+    https://cubic-bezier.com/
+  */
+  transition: transform 0.5s ease-in;
 }
 
 /* 2D Transformation */
