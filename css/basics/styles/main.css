@@ -1,0 +1,26 @@
+:root {
+  --bg-primary: gold;
+  --color-primary: dodgerblue;
+  --border-size: 2px;
+  --border-radius: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  align-items: center;
+
+  height: 100vh;
+}
+
+.box {
+  background-color: var(--bg-primary);
+  border: var(--border-size) dashed var(--color-primary);
+  border-radius: var(--border-radius);
+
+  width: 200px;
+  height: 200px;
+  padding: 2rem;
+}
