@@ -106,3 +106,131 @@ gap: <grid-row-gap> <grid-column-gap>;
 A shorthand for row-gap and column-gap
 
 */
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100px auto 100px;
+  grid-template-columns: 30fr 70fr;
+  gap: 10px;
+
+  grid-template-areas:
+    "header  header"
+    "sidebar main"
+    "footer  footer";
+
+  border: 3px solid lightgray;
+
+  height: calc(100vh - 6px);
+}
+
+.box {
+  /* width: 5rem;
+  height: 5rem; */
+
+  background-color: gold;
+}
+
+/* 
+
+Aligning Grid Items
+
+justify-items: start | end | center | stretch; 
+Align items along the horizontal axis
+
+
+align-items: start | end | center | stretch;
+Align items along the vertical axis
+
+place-items: <align-items> / <justify-items>;
+Sets both the align-items and justify-items properties in a single declaration.
+
+*/
+
+.container {
+  /* stretch is the default value */
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+/* 
+
+Aligning Grid Container
+
+justify-content: start | end | center | stretch | space-around | space-between | space-evenly; 
+Align grid along the horizontal axis inside its container
+
+align-content: start | end | center | stretch | space-around | space-between | space-evenly;    
+Align grid along the vertical axis inside its container
+
+place-content: <align-content> / <justify-content>
+Sets both the align-content and justify-content properties in a single declaration.
+
+*/
+
+/* .container {
+ justify-content: center;
+  align-content: center; 
+} */
+
+/* Properties for the Children (Grid Items) */
+
+/* 
+
+Placing items
+
+grid-column: <start-line> / <end-line>;
+grid-row: <start-line> / <end-line>;
+
+By using these properties we can tell where exactly the item should be placed.
+
+Shorthand for grid-column-start + grid-column-end, 
+and grid-row-start + grid-row-end, respectively.
+
+*/
+
+.box-one {
+  grid-column: 1 / 3;
+  /* 
+  or we can write 
+
+  grid-column: 1 / -1;
+  grid-column: 1 / span 2;
+
+  and if we have specified grid-template-areas,
+  we can use
+
+  grid-area: header;
+  */
+}
+
+.box-four {
+  grid-area: footer;
+}
+
+/* 
+
+Aligning Grid Item (self)
+
+justify-self: start | end | center | stretch;
+Aligns a grid item inside a cell along the horizontal axis
+
+align-self: start | end | center | stretch;
+Aligns a grid item inside a cell along the vertical axis
+
+place-self: <align-self> / <justify-self>;
+Sets both the align-self and justify-self properties in a single declaration.
+
+*/
+
+/* 
+
+Special Unit
+
+fr unit
+They essentially mean “portion of the remaining space”.
+
+*/
